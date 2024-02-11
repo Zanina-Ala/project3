@@ -1,0 +1,206 @@
+/* Reset some default styles and provide a basic layout */
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin-right: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.content1 input, .content1 button {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Responsive styles for larger screens */
+@media only screen and (min-width: 768px) {
+    .firstSection {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content1 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .content1 input {
+        margin-right: 10px;
+    }
+}
+
+/* Styles for the second section */
+.img2 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.img2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the catalog section */
+.secondeSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.catalog-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalog-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.catalog-item {
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.catalog-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item-details {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.catalog-item-description {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+.site-footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #555;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.footer-section h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.copyright-text {
+    color: #fff;
+    margin: 0;
+}

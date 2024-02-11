@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog Container</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .catalog-container {
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .catalog-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .catalog-item {
+            display: inline-block;
+            width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
+            margin-right: 20px;
+            margin-bottom: 20px;
+            vertical-align: top;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        .catalog-item img {
+            max-width: 100px; /* Adjust the maximum width of the item image */
+            margin-right: 15px;
+        }
+
+        .catalog-item-details {
+            flex-grow: 1;
+        }
+
+        .catalog-item-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .catalog-item-description {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="catalog-container">
+    <div class="catalog-title">Catalog Title</div>
+
+    <div class="catalog-item">
+        <img src="item1.jpg" alt="Item 1">
+        <div class="catalog-item-details">
+            <div class="catalog-item-title">Item 1 Title</div>
+            <div class="catalog-item-description">Description of Item 1.</div>
+        </div>
+    </div>
+
+    <div class="catalog-item">
+        <img src="item2.jpg" alt="Item 2">
+        <div class="catalog-item-details">
+            <div class="catalog-item-title">Item 2 Title</div>
+            <div class="catalog-item-description">Description of Item 2.</div>
+        </div>
+    </div>
+
+    <!-- Add more items as needed -->
+
+</div>
+
+</body>
+</html>
